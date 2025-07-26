@@ -177,6 +177,9 @@ h1 {
   gap: 1rem; 
 
 }
+.card{
+  padding: 0;
+}
   .card:nth-child(n+7) {
     display: none;
   }
