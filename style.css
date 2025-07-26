@@ -19,12 +19,28 @@
 .inter {
   font-family: "Inter", sans-serif;
 }
+
+.fit {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.white {
+  color: #ffffff;
+}
 /* share end*/
 
 /*Header start*/
 .header {
   display: flex;
-
   align-items: center;
   justify-content: space-between;
   margin: 2rem 5rem;
@@ -108,38 +124,34 @@ h1 {
 
 /*trussted start*/
 
-.trusted{
+.trusted {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
   margin: 15rem 5rem;
+width: 100%;
 
-  padding: 2rem;
 }
 
-.trusted_img{
-  
+.trusted_img {
   position: relative;
-
-
 }
 
-.bottom{
+.bottom {
   width: 100%;
   display: block;
 }
 
-.top{
+.top {
   width: 15rem;
   position: absolute;
   top: -20%;
   left: 75%;
-   filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
-
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.4));
 }
 
-.trusted_text{
+.trusted_text {
   gap: 20rem;
 }
 
@@ -153,10 +165,119 @@ h1 {
 }
 /*trusted end*/
 
-
 /*offers start*/
 
-.offers p{
+.offers {
+  width: 100%;
+  margin: 10rem 0;
+}
+.offers p {
   text-align: center;
 }
+.main_box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 5rem;
+  height: 26.45rem;
+}
+
+.standing {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 30%;
+  gap: 20px;
+}
+
+
+
+.right {
+  flex: 0 0 70%;
+  background-color: blue;
+  border-radius: 14px;
+  background-image: url(assets/deal-zabo.png);
+  height: auto;
+
+
+}
+
+
+
+
+
+.top_left {
+  background-image: url(assets/deal-bloom.png);
+  background-color: #e95a08;
+  border-radius: 14px;
+   justify-content: center;
+  align-items: center; 
+}
+
+
+.bottom_left {
+  background-color: blue;
+  background-image: url(assets/deal-ana.png);
+  border-radius: 14px;
+   justify-content: center;
+  align-items: center; 
+}
+.bottom_left h1{
+  text-align: center;
+}
+
+.heading{
+  font-size: 1.8rem;
+}
+.bodying{
+  font-size: 1em;
+}
+
+.heading2{
+  font-size: 4rem;
+
+}
+.bodying2{
+  font-size: 3rem;
+}
 /*offers end*/
+
+
+
+/*newsletter start*/
+
+.Newsletter{
+  background-image: url(assets/news-letter-bg.png);
+  height: auto;
+  color: white;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.newinput{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+
+
+}
+
+
+.newinput input{
+  width: 60%;
+  height: 3.5rem;
+  padding-left: 20px
+} 
+
+.newinput button{
+  background-color: #e95a08;
+  border: 0;
+  color: #ffffff;
+  height: 3.5rem;
+  width: 9rem;
+}
+/*newsletter end*/
