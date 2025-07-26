@@ -247,6 +247,7 @@ h1 {
   }
  .trusted{
   flex-direction: column;
+  margin-top: 5rem;
  
  }
 .trusted_text h1{
