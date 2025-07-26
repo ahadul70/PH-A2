@@ -357,7 +357,7 @@ h1 {
 
   
   .top_left h1{
- font-size: 2rem;
+ font-size: 2.5rem;
 }
 .bodying{
 
@@ -368,9 +368,9 @@ h1 {
   font-size: 2rem;
 
 }
-.bodying2{
+.right h1{
   font-size: 3rem;
-    text-decoration: underline;
+    
 }
 
 
@@ -420,6 +420,33 @@ h1 {
   height: 3.5rem;
   width: 9rem;
 }
+.newinput input,
+.newinput button {
+  height: 3.5rem;
+  font-size: 1rem;
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 1rem;
+  line-height: 1;
+}
+
+@media (max-width: 578px) {
+
+  .main_box {
+      display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    gap: 20px;
+    height: auto;
+  }
+.newinput input{
+  width: 60%;} 
+
+}
+
+
+
 /*newsletter end*/
 
 
@@ -459,9 +486,33 @@ h1 {
   display: flex;
   width: 20%;
   margin-right: 20rem;
-  justify-content: flex-end; /* move content to the right */
+  justify-content: flex-end;
   align-items: flex-start; 
   height: 30vh;
   gap:2rem;
 }
+
+
+
+
+
+@media (max-width: 578px) {
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin: 10rem;
+   
+  }
+
+  .list {
+    grid-template-columns: 1fr; /* 1 column */
+    grid-template-rows: repeat(8, auto); /* 8 rows */
+    padding: 0 1rem; /* optional: reduce padding for mobile */
+  }
+
+}
+
 /*footer end*/
